@@ -3,7 +3,7 @@ class exercicio17{
 
 public static void main(String[] args){
 
-    int area;
+    double area;
     double quantidadelata;
     double mistura;
     double misturapreco;
@@ -16,12 +16,12 @@ public static void main(String[] args){
     Scanner teclado = new Scanner(System.in);
 
     System.out.println("Tamamnho em metros quadrados: " );
-    area = teclado.nextInt();
+    area = teclado.nextDouble();
 
+    teclado.close();
+    
     quantidadelata = area / (6 * 18);
     resto = area - (6 * 18 * quantidadelata);
-    
-
     
     if (resto > 0){
         quantidadelata += 1;
@@ -47,7 +47,6 @@ public static void main(String[] args){
     System.out.println("Preço:"+"R$ "+ precoM);
     System.out.println("Mistura das latas: "+ mistura);
     System.out.println("Preço: "+"R$ "+ misturapreco);
-
 
 }
 
