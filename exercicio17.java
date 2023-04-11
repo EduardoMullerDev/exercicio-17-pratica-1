@@ -20,6 +20,14 @@ public class exercicio17 {
         double quantidadeGaloes = metragem / (volumeGalao * rendimentoLitros);
         double valorTotalGaloes = quantidadeGaloes * precoGalao;
         double metragemMistura = metragem * 1.1;
+        
+        double quantidadeLatasMistura = metragemMistura / (volumeLataLitros * rendimentoLitros);
+        double quantidadeLatasMisturaArredondada = Math.ceil(metragemMistura / (volumeLataLitros * rendimentoLitros));
+        double quantidadeDesperdicioLata = quantidadeLatasMisturaArredondada - quantidadeLatasMistura;
+        double quatidadeLitrosAConverterEmGaloes = (1 - quantidadeDesperdicioLata) * volumeLataLitros;
+        double quantidadeEmGaloesArredondada = Math.ceil(quatidadeLitrosAConverterEmGaloes/volumeGalao);
+        double quantidadeEmLataFinal = Math.floor(quantidadeLatasMistura);
+
 
      
         System.out.printf("A metragem a ser pintada é de %f metragem", metragem);
@@ -29,8 +37,11 @@ public class exercicio17 {
         System.out.printf("A quantidade de galões é %f e o valor total em galões é %f", quantidadeGaloes, valorTotalGaloes);
         System.out.println("");
         System.out.printf("A metragem para mistura é igual a %f", metragemMistura);
+        System.out.println("");
+        System.out.printf("quantidade em lata é %f e em galões é % f", quantidadeEmLataFinal, quantidadeEmGaloesArredondada);
   
-  
+
+        
   
   
     }
