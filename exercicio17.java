@@ -27,6 +27,8 @@ public class exercicio17 {
         double quatidadeLitrosAConverterEmGaloes = (1 - quantidadeDesperdicioLata) * volumeLataLitros;
         double quantidadeEmGaloesArredondada = Math.ceil(quatidadeLitrosAConverterEmGaloes/volumeGalao);
         double quantidadeEmLataFinal = Math.floor(quantidadeLatasMistura);
+        double valortotal= metragem / (quantidadeEmLataFinal * quantidadeEmGaloesArredondada);
+
 
 
      
@@ -39,6 +41,8 @@ public class exercicio17 {
         System.out.printf("A metragem para mistura é igual a %f", metragemMistura);
         System.out.println("");
         System.out.printf("quantidade em lata é %f e em galões é % f", quantidadeEmLataFinal, quantidadeEmGaloesArredondada);
+        System.out.println("");
+        System.out.printf("O valor total foi de: %f", valortotal);
   
 
         
