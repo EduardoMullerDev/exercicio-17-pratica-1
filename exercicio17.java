@@ -5,7 +5,7 @@ public class exercicio17 {
 
         Scanner teclado = new Scanner(System.in);
 
-        System.out.print("Entre com a metragem a ser pintada em m2: ");
+        System.out.printf("Entre com a metragem a ser pintada em m2: ");
         double metragem = teclado.nextDouble();
 
         teclado.close();
@@ -22,7 +22,7 @@ public class exercicio17 {
         double metragemMistura = metragem * 1.1;
 
      
-        System.out.printf("A metragem a ser pintada é de " + metragem +  " metragem");
+        System.out.printf("A metragem a ser pintada é de %f metragem", metragem);
         System.out.println("");
         System.out.printf("A quantidade de latas é %f e o valor total em latas é %f", quantidadeLatas, valorTotalLatas);
         System.out.println("");
